@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# set keybindings
+set completion-ignore-case on
+set show-all-if-ambiguous on

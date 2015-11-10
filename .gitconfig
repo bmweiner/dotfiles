@@ -1,0 +1,12 @@
+[user]
+	name = bmweiner
+	email = bmweiner@users.noreply.github.com
+[credential]
+	helper = osxkeychain
+[color]
+	ui = true
+[core]
+	editor = vim
+[push]
+	default = simple
+
