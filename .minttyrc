@@ -3,3 +3,7 @@ Transparency=off
 CtrlShiftShortcuts=yes
 CursorType=block
 CursorBlinks=no
+Rows=40
+Columns=80
+X=1300
+Y=0
