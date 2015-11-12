@@ -8,7 +8,7 @@ export M2=$M2_HOME/bin
 export HADOOP_HOME=/c/cmd/hadoop
 export SPARK_HOME=/c/cmd/spark
 export JENA_HOME=/c/cmd/jena
-export NLTK_DATA=/c/cmd/nltk_data
+export NLTK_DATA=C:\\cmd\\nltk_data
 
 # store path array
 locs=(
@@ -54,6 +54,15 @@ do
 	PATH=$PATH$loc:
 done
 export PATH
+
+# declare functions
+cbc() {
+    cat >/dev/clipboard
+}
+
+cbp(){
+    cat /dev/clipboard
+}
 
 # set aliases
 alias np='/c/cmd/npp/notepad++.exe'
