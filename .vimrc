@@ -11,10 +11,11 @@ set tabstop=4
 set expandtab
 set softtabstop=4
 set shiftround
+set number
 set clipboard=unnamed " yank to system clipboard
 
 " set mappings
-nmap <leader>md :%!~\dotfiles\scripts\Markdown.pl --html4tags <cr>
+nmap <leader>md :%!~/dotfiles/scripts/Markdown.pl --html4tags <cr>
 nmap <space> zz
 nmap n nzz
 nmap N Nzz
