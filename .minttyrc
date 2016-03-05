@@ -5,5 +5,6 @@ CursorType=block
 CursorBlinks=no
 Rows=40
 Columns=80
-X=1300
+X=1645
 Y=0
+CopyOnSelect=no
