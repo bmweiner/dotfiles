@@ -6,7 +6,7 @@ export JAVA_HOME=/usr/libexec/java_home
 # store path array
 locs=(
 /usr/local/bin
-/usr/local/opt/anaconda/bin
+~/anaconda3/bin
 $JAVA_HOME/bin
 )
 
