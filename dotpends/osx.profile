@@ -6,15 +6,17 @@ export JAVA_HOME=/usr/libexec/java_home
 # store path array
 locs=(
 /usr/local/bin
-~/anaconda3/bin
+/opt/anaconda2/bin
+#/opt/anaconda3/bin
 $JAVA_HOME/bin
 )
 
 # set path
 for loc in "${locs[@]}"
 do
-	PATH=$PATH$loc:
+	PATH_BASH=$PATH_BASH$loc:
 done
+PATH=$PATH_BASH$PATH
 export PATH
 
 # set aliases
