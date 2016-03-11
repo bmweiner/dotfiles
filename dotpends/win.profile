@@ -2,6 +2,7 @@
 
 # set environment variables
 export Platform=x64
+export VS90COMNTOOLS=$VS140COMNTOOLS  # allows py27 to find vcvarsall.bat
 export JAVA_HOME=/c/cmd/java/jdk1.8.0_60
 export M2_HOME=/c/cmd/maven
 export M2=$M2_HOME/bin
@@ -16,6 +17,7 @@ locs=(
 /c/cmd/7-Zip
 /c/cmd/Git/cmd
 /c/cmd/Git/bin
+/c/Program\ Files\ \(x86\)/Microsoft\ Visual\ Studio\ 14.0/VC
 /c/cmd/cmake/bin
 /c/cmd/mingw64/bin
 /c/cmd/MinGW/bin
@@ -85,6 +87,7 @@ alias powershell='winpty powershell'
 alias gnuplot='winpty gnuplot.exe'
 alias octave-cli='winpty octave-cli.exe'
 alias python='winpty python.exe'  # http://goo.gl/mk4Thx
+alias ipython='winpty ipython.exe'
 alias R='winpty R.exe'
 alias mongo='winpty mongo.exe'
 alias mysql='winpty mysql.exe'
