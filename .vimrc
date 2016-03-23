@@ -12,6 +12,7 @@ set expandtab
 set softtabstop=4
 set shiftround
 set number
+set colorcolumn=80
 set clipboard=unnamed " yank to system clipboard
 
 " set mappings
