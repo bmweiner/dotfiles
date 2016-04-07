@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # set environment variables
-export JAVA_HOME=/usr/libexec/java_home
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 # store path array
 locs=(
 /usr/local/bin
-/opt/anaconda2/bin
-#/opt/anaconda3/bin
+#/usr/local/opt/anaconda2/bin
+#/usr/local/opt/anaconda3/bin
 $JAVA_HOME/bin
 )
 
