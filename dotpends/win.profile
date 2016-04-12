@@ -2,6 +2,8 @@
 
 # set environment variables
 export Platform=x64
+export MSVS="C:\Program Files (x86)\Microsoft Visual Studio 14.0"
+export VS140COMNTOOLS="$MSVS\Common7\Tools"
 export VS90COMNTOOLS=$VS140COMNTOOLS  # allows py27 to find vcvarsall.bat
 export JAVA_HOME=/c/cmd/java/jdk1.8.0_60
 export M2_HOME=/c/cmd/maven
@@ -17,7 +19,8 @@ locs=(
 /c/cmd/7-Zip
 /c/cmd/Git/cmd
 /c/cmd/Git/bin
-/c/Program\ Files\ \(x86\)/Microsoft\ Visual\ Studio\ 14.0/VC
+/c/cmd/TortoiseSVN/bin
+"$(cygpath "$MSVS")/VC"
 /c/cmd/cmake/bin
 /c/cmd/mingw64/bin
 /c/cmd/MinGW/bin
@@ -31,6 +34,7 @@ $JAVA_HOME/bin
 #/c/cmd/Python27/Scripts
 #/c/cmd/Python35
 #/c/cmd/Python35/Scripts
+/c/cmd/pypy3-2.4.0-win32
 /c/cmd/julia/bin
 /c/cmd/gnuplot/bin
 /c/cmd/graphviz/bin
@@ -52,6 +56,7 @@ $SPARK_HOME/bin
 /c/cmd/protobuf
 /c/cmd/zlib
 /c/cmd/ImageMagick
+/c/cmd/Pandoc
 $DOCKER_TOOLBOX_INSTALL_PATH
 )
 
@@ -88,7 +93,9 @@ alias gnuplot='winpty gnuplot.exe'
 alias octave-cli='winpty octave-cli.exe'
 alias python='winpty python.exe'  # http://goo.gl/mk4Thx
 alias ipython='winpty ipython.exe'
+alias pypy='winpty pypy.exe'
 alias R='winpty R.exe'
+alias node='winpty node.exe'
 alias mongo='winpty mongo.exe'
 alias mysql='winpty mysql.exe'
 alias sqlite3='winpty sqlite3.exe'
