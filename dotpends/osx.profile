@@ -2,9 +2,11 @@
 
 # set environment variables
 export JAVA_HOME=$(/usr/libexec/java_home)
+export PYENV_ROOT=/usr/local/var/pyenv
 
 # store path array
 locs=(
+$PYENV_ROOT/shims
 /usr/local/bin
 #/usr/local/opt/anaconda2/bin
 #/usr/local/opt/anaconda3/bin
@@ -20,3 +22,4 @@ PATH=$PATH_BASH$PATH
 export PATH
 
 # set aliases
+
