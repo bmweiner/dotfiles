@@ -1,3 +1,3 @@
 # dotfiles
 
-Dotfiles for OS X and Windows.
+Related: [dotlink](https://github.com/bmweiner/dotlink)

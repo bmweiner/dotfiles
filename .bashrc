@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# set environment variables
-export PS1='\[$(tput setaf 2)\][\h:\W]\$\[$(tput sgr0)\] '
+# set common environment variables
 export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
 export EDITOR=vim

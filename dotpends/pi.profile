@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# set environment variables
+# set system environment variables
+export PS1='\[$(tput setaf 6)\][\h:\W]\$\[$(tput sgr0)\] '
 
 # store path array
 locs=(
