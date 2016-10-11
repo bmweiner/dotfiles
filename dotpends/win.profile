@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # set environment variables
+export PS1='\[$(tput setaf 2)\][\h:\W]\$\[$(tput sgr0)\] '
 export Platform=x64
 export MSVS="C:\Program Files (x86)\Microsoft Visual Studio 14.0"
 export VS140COMNTOOLS="$MSVS\Common7\Tools"
