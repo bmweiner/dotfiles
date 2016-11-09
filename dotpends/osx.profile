@@ -23,4 +23,4 @@ PATH=$PATH_BASH$PATH
 export PATH
 
 # set aliases
-
+alias mate=/Applications/TextMate.app/Contents/Resources/mate
