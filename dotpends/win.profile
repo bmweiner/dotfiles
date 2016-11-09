@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # set environment variables
+export PS1='\[$(tput setaf 2)\][\h:\W]\$\[$(tput sgr0)\] '
 export Platform=x64
 export MSVS="C:\Program Files (x86)\Microsoft Visual Studio 14.0"
 export VS140COMNTOOLS="$MSVS\Common7\Tools"
@@ -17,8 +18,9 @@ export NLTK_DATA=C:\\cmd\\nltk_data
 # store path array
 locs=(
 /c/cmd/7-Zip
-/c/cmd/Git/cmd
-/c/cmd/Git/bin
+/C/Program\ Files\ \(x86\)/WinSCP
+/c/cmd/git/cmd
+/c/cmd/git/bin
 /c/cmd/TortoiseSVN/bin
 "$(cygpath "$MSVS")/VC"
 /c/cmd/cmake/bin
@@ -42,7 +44,7 @@ $JAVA_HOME/bin
 /c/cmd/nodejs
 $(cygpath $APPDATA/npm)
 /c/cmd/octave/bin
-/c/cmd/R/bin
+/c/cmd/R/R-3.3.1/bin
 /c/cmd/ruby/bin
 /c/cmd/scala/bin
 $HADOOP_HOME/bin
@@ -58,6 +60,7 @@ $SPARK_HOME/bin
 /c/cmd/ImageMagick
 /c/cmd/Pandoc
 $DOCKER_TOOLBOX_INSTALL_PATH
+/c/Program\ Files/SASHome/SASFoundation/9.4
 )
 
 # set path
