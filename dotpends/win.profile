@@ -14,6 +14,7 @@ export SPARK_HOME=/c/cmd/spark
 export JENA_HOME=/c/cmd/jena
 export DOCKER_TOOLBOX_INSTALL_PATH=/c/cmd/docker
 export NLTK_DATA=C:\\cmd\\nltk_data
+export MAGICK_HOME=/c/cmd/ImageMagick
 
 # store path array
 locs=(
@@ -44,7 +45,7 @@ $JAVA_HOME/bin
 /c/cmd/nodejs
 $(cygpath $APPDATA/npm)
 /c/cmd/octave/bin
-/c/cmd/R/R-3.3.1/bin
+/c/cmd/R/R-3.3.2/bin
 /c/cmd/ruby/bin
 /c/cmd/scala/bin
 $HADOOP_HOME/bin
@@ -59,6 +60,9 @@ $SPARK_HOME/bin
 /c/cmd/zlib
 /c/cmd/ImageMagick
 /c/cmd/Pandoc
+/c/cmd/Tesseract-OCR
+/c/cmd/xpdf/bin64
+/c/cmd/gs/gs9.20/bin
 $DOCKER_TOOLBOX_INSTALL_PATH
 /c/Program\ Files/SASHome/SASFoundation/9.4
 )
@@ -85,6 +89,8 @@ function cbp(){
 alias np='/c/cmd/npp/notepad++.exe'
 alias activate='start cmd //k C:/cmd/Anaconda/Scripts/activate.bat'
 alias bokeh='bokeh.bat'
+alias tika='java -jar /c/cmd/tika/tika-app-1.14.jar'
+alias tika-server='java -jar /c/cmd/tika/tika-server-1.14.jar'
 
 # patch for lightning, must start server from parent dir
 alias lightning-server='cd $(cygpath $APPDATA/npm) && lightning-server'
@@ -102,3 +108,5 @@ alias node='winpty node.exe'
 alias mongo='winpty mongo.exe'
 alias mysql='winpty mysql.exe'
 alias sqlite3='winpty sqlite3.exe'
+alias docker='winpty docker.exe'
+alias sqlcmd='winpty sqlcmd.exe'
