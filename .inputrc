@@ -1,4 +1,4 @@
-#!/bin/bash
+# GNU readline configuration
 
 # set keybindings
 set completion-ignore-case on
