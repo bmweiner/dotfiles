@@ -1,6 +1,3 @@
-" call pathogen (loads plugins)
-execute pathogen#infect()
-
 " settings
 syntax on
 filetype plugin indent on
