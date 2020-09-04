@@ -12,19 +12,18 @@ mcd () { mkdir -p "$1" && cd "$1"; }
 alias ll='ls -lha'
 
 # set environment variables
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home
-export CATALINA_HOME=~/local/apache-tomcat-8.5.57
+export JAVA_HOME=~/local/lib/jdk-11.0.8+10/Contents/Home
+export CATALINA_HOME=~/local/lib/apache-tomcat-8.5.57
 
 # set path
 items=(
-~/local/miniconda3/bin
-~/local/apache-maven/bin
+~/local/bin
+~/local/lib/miniconda3/bin
+~/local/lib/apache-maven-3.6.3/bin
+~/local/lib/node-v12.18.3-darwin-x64/bin
+~/local/lib/jdk-11.0.8+10/Contents/Home/bin
 )
 
 for item in $items; do
     export PATH=$item:$PATH
 done
-
-
-# export PATH=/usr/local/opt/ruby/bin:$PATH 
-# export PATH=/usr/local/lib/ruby/gems/2.5.0/bin:$PATH
