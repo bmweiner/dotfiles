@@ -17,6 +17,7 @@ export CATALINA_HOME=~/local/lib/apache-tomcat-8.5.57
 
 # set path
 items=(
+~/.local/bin
 ~/local/bin
 ~/local/lib/miniconda3/bin
 ~/local/lib/apache-maven-3.6.3/bin
