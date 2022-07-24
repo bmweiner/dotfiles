@@ -14,7 +14,6 @@ set colorcolumn=80
 set clipboard=unnamed " yank to system clipboard
 
 " set mappings
-nmap <leader>md :%!~/dotfiles/scripts/Markdown.pl --html4tags <cr>
 nmap <space> zz
 nmap n nzz
 nmap N Nzz
