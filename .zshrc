@@ -14,16 +14,18 @@ alias ll='ls -lha'
 # set environment variables
 export JAVA_HOME=~/local/lib/jdk-11.0.8+10/Contents/Home
 export CATALINA_HOME=~/local/lib/apache-tomcat-8.5.57
+export SCALA_HOME=~/local/lib/scala-2.13.4
 
-# set path
+# set path, ordered by precedence
 items=(
+/usr/local/bin
 ~/local/bin
-~/local/lib/miniconda3/bin
 ~/local/lib/apache-maven-3.6.3/bin
 ~/local/lib/node-v12.18.3-darwin-x64/bin
 ~/local/lib/jdk-11.0.8+10/Contents/Home/bin
+~/local/lib/scala-2.13.4/bin
 )
 
-for item in $items; do
+for (( idx=${#items[@]}-1 ; idx>=0 ; idx-- )) ; do
     export PATH=$item:$PATH
 done
