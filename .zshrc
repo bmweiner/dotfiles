@@ -27,7 +27,7 @@ items=(
 )
 
 for (( idx=${#items[@]}-1 ; idx>=0 ; idx-- )) ; do
-    export PATH=$item:$PATH
+    export PATH="${items[idx]}":$PATH
 done
 
 # update prompt
