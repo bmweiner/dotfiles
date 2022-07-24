@@ -3,6 +3,7 @@
 	email = bmweiner@users.noreply.github.com
 [credential]
 	helper = osxkeychain
+	helper = store
 [color]
 	ui = true
 [core]
